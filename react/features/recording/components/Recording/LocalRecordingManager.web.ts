@@ -39,7 +39,7 @@ interface ILocalRecordingManager {
     totalSize: number;
 }
 
-const VIDEO_BIT_RATE = 1200000; // 2.5Mbps in bits
+const VIDEO_BIT_RATE = 800000; // default 2.5Mbps in bits
 const MAX_SIZE = 1073741824; // 1GB in bytes
 
 const getMimeType = (): string => {
@@ -52,7 +52,6 @@ const getMimeType = (): string => {
     ];
 
     // test to console
-    console.log('==========CACDI CONSOLE===========');
     console.log('Bit rate setting: ', VIDEO_BIT_RATE);
     console.log('Possible types array: ', possibleTypes.join(', '));
 
